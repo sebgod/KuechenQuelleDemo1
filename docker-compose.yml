@@ -1,0 +1,10 @@
+version: '3.4'
+
+services:
+  kuechenquelledemo1:
+    image: ${DOCKER_REGISTRY}kuechenquelledemo1
+    build:
+      context: KuechenQuelleDemo1
+      dockerfile: Dockerfile
+    ports:
+      - "42356:80"
