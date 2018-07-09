@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 
 namespace KuechenQuelleDemo1
 {
     class Program
     {
-        static async Task Main(string[] args)
+        public static async Task Main(string[] args)
         {
             var utf8 = new UTF8Encoding(false);
             Console.InputEncoding = utf8;

@@ -3,9 +3,8 @@ WORKDIR /app
 
 FROM microsoft/dotnet:2.1-sdk AS build
 WORKDIR /src
-COPY KuechenQuelleDemo1.csproj KuechenQuelleDemo1/
+COPY . KuechenQuelleDemo1/
 RUN dotnet restore KuechenQuelleDemo1/KuechenQuelleDemo1.csproj
-COPY . .
 WORKDIR /src/KuechenQuelleDemo1
 RUN dotnet build KuechenQuelleDemo1.csproj -c Debug -o /app
 
